@@ -14,6 +14,14 @@
 		B79E766820D7432900B13157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79E766720D7432900B13157 /* Assets.xcassets */; };
 		B79E766B20D7432900B13157 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B79E766920D7432900B13157 /* LaunchScreen.storyboard */; };
 		B79E767520D74BBD00B13157 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B79E767420D74BBD00B13157 /* GoogleService-Info.plist */; };
+		B79E767820D76B1100B13157 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E767720D76B1100B13157 /* ItemViewController.swift */; };
+		B79E767C20D76C3000B13157 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E767B20D76C3000B13157 /* FirebaseManager.swift */; };
+		B79E767F20D76D5E00B13157 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E767E20D76D5E00B13157 /* Item.swift */; };
+		B79E768320D778EA00B13157 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E768120D778EA00B13157 /* ItemCollectionViewCell.swift */; };
+		B79E768420D778EA00B13157 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79E768220D778EA00B13157 /* ItemCollectionViewCell.xib */; };
+		B79E768620D7950700B13157 /* SelectedItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E768520D7950700B13157 /* SelectedItemViewController.swift */; };
+		B79E768B20D7955D00B13157 /* SelectedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79E768920D7955D00B13157 /* SelectedItemTableViewCell.swift */; };
+		B79E768C20D7955D00B13157 /* SelectedItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79E768A20D7955D00B13157 /* SelectedItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +35,14 @@
 		B79E766A20D7432900B13157 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B79E766C20D7432900B13157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B79E767420D74BBD00B13157 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B79E767720D76B1100B13157 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		B79E767B20D76C3000B13157 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		B79E767E20D76D5E00B13157 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B79E768120D778EA00B13157 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		B79E768220D778EA00B13157 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		B79E768520D7950700B13157 /* SelectedItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedItemViewController.swift; sourceTree = "<group>"; };
+		B79E768920D7955D00B13157 /* SelectedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedItemTableViewCell.swift; sourceTree = "<group>"; };
+		B79E768A20D7955D00B13157 /* SelectedItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedItemTableViewCell.xib; sourceTree = "<group>"; };
 		BD497909CCE31B2128774EEF /* Pods_CoffeeOrderSystemPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeOrderSystemPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,8 +96,10 @@
 		B79E765F20D7432800B13157 /* CoffeeOrderSystemPractice */ = {
 			isa = PBXGroup;
 			children = (
+				B79E768020D778CF00B13157 /* View */,
+				B79E767920D76C1500B13157 /* Model */,
+				B79E767620D76AD400B13157 /* Controller */,
 				B79E766020D7432800B13157 /* AppDelegate.swift */,
-				B79E766220D7432800B13157 /* CoffeeOrderViewController.swift */,
 				B79E766420D7432800B13157 /* CoffeeOrder.storyboard */,
 				B79E766720D7432900B13157 /* Assets.xcassets */,
 				B79E766920D7432900B13157 /* LaunchScreen.storyboard */,
@@ -89,6 +107,68 @@
 				B79E767420D74BBD00B13157 /* GoogleService-Info.plist */,
 			);
 			path = CoffeeOrderSystemPractice;
+			sourceTree = "<group>";
+		};
+		B79E767620D76AD400B13157 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B79E766220D7432800B13157 /* CoffeeOrderViewController.swift */,
+				B79E767720D76B1100B13157 /* ItemViewController.swift */,
+				B79E768520D7950700B13157 /* SelectedItemViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B79E767920D76C1500B13157 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B79E767D20D76D4B00B13157 /* Item */,
+				B79E767A20D76C1C00B13157 /* Firebase */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B79E767A20D76C1C00B13157 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				B79E767B20D76C3000B13157 /* FirebaseManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		B79E767D20D76D4B00B13157 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				B79E767E20D76D5E00B13157 /* Item.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		B79E768020D778CF00B13157 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B79E768820D7954000B13157 /* SelectedItem */,
+				B79E768720D7953100B13157 /* Item */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B79E768720D7953100B13157 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				B79E768120D778EA00B13157 /* ItemCollectionViewCell.swift */,
+				B79E768220D778EA00B13157 /* ItemCollectionViewCell.xib */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		B79E768820D7954000B13157 /* SelectedItem */ = {
+			isa = PBXGroup;
+			children = (
+				B79E768920D7955D00B13157 /* SelectedItemTableViewCell.swift */,
+				B79E768A20D7955D00B13157 /* SelectedItemTableViewCell.xib */,
+			);
+			path = SelectedItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +232,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79E766B20D7432900B13157 /* LaunchScreen.storyboard in Resources */,
+				B79E768C20D7955D00B13157 /* SelectedItemTableViewCell.xib in Resources */,
 				B79E767520D74BBD00B13157 /* GoogleService-Info.plist in Resources */,
+				B79E768420D778EA00B13157 /* ItemCollectionViewCell.xib in Resources */,
 				B79E766820D7432900B13157 /* Assets.xcassets in Resources */,
 				B79E766620D7432800B13157 /* CoffeeOrder.storyboard in Resources */,
 			);
@@ -187,11 +269,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CoffeeOrderSystemPractice/Pods-CoffeeOrderSystemPractice-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,8 +292,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B79E767F20D76D5E00B13157 /* Item.swift in Sources */,
+				B79E767C20D76C3000B13157 /* FirebaseManager.swift in Sources */,
 				B79E766320D7432800B13157 /* CoffeeOrderViewController.swift in Sources */,
+				B79E768620D7950700B13157 /* SelectedItemViewController.swift in Sources */,
+				B79E768320D778EA00B13157 /* ItemCollectionViewCell.swift in Sources */,
+				B79E768B20D7955D00B13157 /* SelectedItemTableViewCell.swift in Sources */,
 				B79E766120D7432800B13157 /* AppDelegate.swift in Sources */,
+				B79E767820D76B1100B13157 /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +447,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HH362Z9DX;
 				INFOPLIST_FILE = CoffeeOrderSystemPractice/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.btding.CoffeeOrderSystemPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -371,7 +466,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6HH362Z9DX;
 				INFOPLIST_FILE = CoffeeOrderSystemPractice/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.btding.CoffeeOrderSystemPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

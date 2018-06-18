@@ -7,5 +7,9 @@ target 'CoffeeOrderSystemPractice' do
 
   # Pods for CoffeeOrderSystemPractice
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'SDWebImage'
+
+
 
 end

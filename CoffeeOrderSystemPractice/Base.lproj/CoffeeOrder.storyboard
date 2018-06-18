@@ -17,12 +17,112 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osl-oB-PLS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="266"/>
+                                <connections>
+                                    <segue destination="w6G-df-apc" kind="embed" identifier="item" id="82R-sO-Avp"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5F-Jb-UYj">
+                                <rect key="frame" x="0.0" y="266" width="375" height="401"/>
+                                <connections>
+                                    <segue destination="a81-73-mtc" kind="embed" identifier="selectedItem" id="L7T-i4-oNg"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="osl-oB-PLS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Ei-ua-Rlc"/>
+                            <constraint firstItem="q5F-Jb-UYj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5I4-T4-aLs"/>
+                            <constraint firstItem="q5F-Jb-UYj" firstAttribute="top" secondItem="osl-oB-PLS" secondAttribute="bottom" id="Oam-5K-zZH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q5F-Jb-UYj" secondAttribute="bottom" id="c3v-oF-Br1"/>
+                            <constraint firstItem="osl-oB-PLS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cTu-7g-Plv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="osl-oB-PLS" secondAttribute="bottom" constant="401" id="dED-KD-6cE"/>
+                            <constraint firstItem="osl-oB-PLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="faK-1s-Yrs"/>
+                            <constraint firstItem="q5F-Jb-UYj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ipy-GU-HqV"/>
+                            <constraint firstItem="osl-oB-PLS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wsf-9j-an1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="122.78860569715144"/>
+        </scene>
+        <!--Item View Controller-->
+        <scene sceneID="1Uz-24-IaS">
+            <objects>
+                <viewController id="w6G-df-apc" customClass="ItemViewController" customModule="CoffeeOrderSystemPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Oe-mp-Yap">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="266"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wuk-Yg-mIK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="266"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fFX-EV-FUS">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZKI-WH-LEb">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wuk-Yg-mIK" secondAttribute="trailing" id="6FO-Ac-gcx"/>
+                            <constraint firstItem="Wuk-Yg-mIK" firstAttribute="leading" secondItem="1Oe-mp-Yap" secondAttribute="leading" id="93K-mM-aa4"/>
+                            <constraint firstItem="Wuk-Yg-mIK" firstAttribute="top" secondItem="1Oe-mp-Yap" secondAttribute="top" id="VuR-qn-grK"/>
+                            <constraint firstAttribute="bottom" secondItem="Wuk-Yg-mIK" secondAttribute="bottom" id="igw-5o-6PB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Wuk-Yg-mIK" id="UUl-kh-gLt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wei-u3-MF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="-138"/>
+        </scene>
+        <!--Selected Item View Controller-->
+        <scene sceneID="iSQ-uz-C8p">
+            <objects>
+                <viewController id="a81-73-mtc" customClass="SelectedItemViewController" customModule="CoffeeOrderSystemPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UA5-Fc-PH9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="401"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ijA-zc-owc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="401"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ijA-zc-owc" firstAttribute="leading" secondItem="UA5-Fc-PH9" secondAttribute="leading" id="Lq2-II-218"/>
+                            <constraint firstAttribute="bottom" secondItem="ijA-zc-owc" secondAttribute="bottom" id="Onf-bL-LDd"/>
+                            <constraint firstAttribute="trailing" secondItem="ijA-zc-owc" secondAttribute="trailing" id="laQ-Ft-sJH"/>
+                            <constraint firstItem="ijA-zc-owc" firstAttribute="top" secondItem="UA5-Fc-PH9" secondAttribute="top" id="p7f-wd-Rqe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectedItemTableView" destination="ijA-zc-owc" id="Tk2-5u-1DO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JM0-2V-cdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="381"/>
         </scene>
     </scenes>
 </document>
