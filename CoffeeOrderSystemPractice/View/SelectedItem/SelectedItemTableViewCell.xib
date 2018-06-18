@@ -81,20 +81,73 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sae-Cl-mxW">
+                        <rect key="frame" x="137" y="73" width="44" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiI-FI-pfC" customClass="DLRadioButton">
+                        <rect key="frame" x="179" y="73" width="59" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="Yes">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.039966724539999998" green="0.50379774310000003" blue="0.91154272759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                <color key="value" red="0.039966724539999998" green="0.50379774310000003" blue="0.91154272759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="otherButtons" destination="Xzr-iR-Cvh" id="P6V-73-do5"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzr-iR-Cvh" customClass="DLRadioButton">
+                        <rect key="frame" x="258" y="73" width="46" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="No">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.039966724539999998" green="0.50379774310000003" blue="0.91154272759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                <color key="value" red="0.039966724539999998" green="0.50379774310000003" blue="0.91154272759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Xzr-iR-Cvh" secondAttribute="trailing" constant="16" id="2R8-eZ-zj8"/>
+                    <constraint firstItem="Xzr-iR-Cvh" firstAttribute="width" secondItem="Z8b-y0-Swt" secondAttribute="width" id="50H-AE-L6D"/>
                     <constraint firstAttribute="trailing" secondItem="Z8b-y0-Swt" secondAttribute="trailing" constant="16" id="6ik-5B-URL"/>
+                    <constraint firstItem="sae-Cl-mxW" firstAttribute="leading" secondItem="hsH-qq-3yr" secondAttribute="trailing" constant="42" id="6mb-j0-BPh"/>
                     <constraint firstItem="VKn-xL-lVn" firstAttribute="top" secondItem="4gb-mx-Zbm" secondAttribute="top" constant="6" id="Cyz-22-XBZ"/>
                     <constraint firstItem="hsH-qq-3yr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="E3c-z1-mX4"/>
                     <constraint firstItem="hsH-qq-3yr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="IIZ-2I-Oq0"/>
+                    <constraint firstItem="Xzr-iR-Cvh" firstAttribute="top" secondItem="sae-Cl-mxW" secondAttribute="top" id="K1M-YH-5QI"/>
+                    <constraint firstItem="Xzr-iR-Cvh" firstAttribute="leading" secondItem="IiI-FI-pfC" secondAttribute="trailing" constant="20" id="Oxj-mm-DhK"/>
+                    <constraint firstItem="VKn-xL-lVn" firstAttribute="leading" secondItem="IiI-FI-pfC" secondAttribute="leading" id="PMQ-0K-Hh7"/>
                     <constraint firstItem="4gb-mx-Zbm" firstAttribute="leading" secondItem="hsH-qq-3yr" secondAttribute="trailing" constant="43" id="PbG-yi-2GP"/>
                     <constraint firstItem="LTt-Vg-a3U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="QjM-QU-SVo"/>
+                    <constraint firstItem="IiI-FI-pfC" firstAttribute="top" secondItem="sae-Cl-mxW" secondAttribute="top" id="TmQ-QL-sAD"/>
+                    <constraint firstItem="IiI-FI-pfC" firstAttribute="leading" secondItem="sae-Cl-mxW" secondAttribute="trailing" constant="-2" id="VoN-9T-cLQ"/>
                     <constraint firstItem="LTt-Vg-a3U" firstAttribute="leading" secondItem="hsH-qq-3yr" secondAttribute="trailing" constant="92" id="XtR-46-1cG"/>
                     <constraint firstItem="Z8b-y0-Swt" firstAttribute="leading" secondItem="VKn-xL-lVn" secondAttribute="trailing" constant="20" id="c6N-Xa-pXL"/>
+                    <constraint firstItem="IiI-FI-pfC" firstAttribute="bottom" secondItem="sae-Cl-mxW" secondAttribute="bottom" id="cbQ-Jz-wWb"/>
+                    <constraint firstItem="Xzr-iR-Cvh" firstAttribute="bottom" secondItem="sae-Cl-mxW" secondAttribute="bottom" id="eP9-EF-KWd"/>
+                    <constraint firstItem="IiI-FI-pfC" firstAttribute="leading" secondItem="sae-Cl-mxW" secondAttribute="trailing" constant="-2" id="jMh-nx-JQ7"/>
                     <constraint firstItem="VKn-xL-lVn" firstAttribute="bottom" secondItem="4gb-mx-Zbm" secondAttribute="bottom" constant="-7" id="jzu-xl-AF9"/>
                     <constraint firstItem="Z8b-y0-Swt" firstAttribute="bottom" secondItem="4gb-mx-Zbm" secondAttribute="bottom" constant="-7" id="oYH-3y-dpS"/>
                     <constraint firstItem="4gb-mx-Zbm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="uNT-bL-EiA"/>
+                    <constraint firstItem="Xzr-iR-Cvh" firstAttribute="leading" secondItem="Z8b-y0-Swt" secondAttribute="leading" id="v3s-IT-EdC"/>
+                    <constraint firstItem="IiI-FI-pfC" firstAttribute="width" secondItem="VKn-xL-lVn" secondAttribute="width" id="wP1-A1-DM6"/>
                     <constraint firstAttribute="bottom" secondItem="hsH-qq-3yr" secondAttribute="bottom" constant="17.5" id="wrn-9D-l0N"/>
+                    <constraint firstItem="sae-Cl-mxW" firstAttribute="top" secondItem="4gb-mx-Zbm" secondAttribute="bottom" constant="1" id="yNm-x6-pie"/>
                     <constraint firstItem="Z8b-y0-Swt" firstAttribute="top" secondItem="4gb-mx-Zbm" secondAttribute="top" constant="6" id="yrq-IK-KvR"/>
                 </constraints>
             </tableViewCellContentView>

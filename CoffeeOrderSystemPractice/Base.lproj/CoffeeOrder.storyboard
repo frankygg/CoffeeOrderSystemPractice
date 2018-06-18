@@ -25,23 +25,31 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5F-Jb-UYj">
-                                <rect key="frame" x="0.0" y="266" width="375" height="401"/>
+                                <rect key="frame" x="0.0" y="266" width="375" height="346"/>
                                 <connections>
                                     <segue destination="a81-73-mtc" kind="embed" identifier="selectedItem" id="L7T-i4-oNg"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0c-b7-d9e">
+                                <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                                <state key="normal" title="Confirm"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="osl-oB-PLS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Ei-ua-Rlc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w0c-b7-d9e" secondAttribute="bottom" id="3GF-mS-Hxh"/>
                             <constraint firstItem="q5F-Jb-UYj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5I4-T4-aLs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w0c-b7-d9e" secondAttribute="trailing" id="FEh-Cg-EF0"/>
                             <constraint firstItem="q5F-Jb-UYj" firstAttribute="top" secondItem="osl-oB-PLS" secondAttribute="bottom" id="Oam-5K-zZH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q5F-Jb-UYj" secondAttribute="bottom" id="c3v-oF-Br1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q5F-Jb-UYj" secondAttribute="bottom" constant="55" id="c3v-oF-Br1"/>
+                            <constraint firstItem="w0c-b7-d9e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c7k-mf-Smi"/>
                             <constraint firstItem="osl-oB-PLS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cTu-7g-Plv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="osl-oB-PLS" secondAttribute="bottom" constant="401" id="dED-KD-6cE"/>
                             <constraint firstItem="osl-oB-PLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="faK-1s-Yrs"/>
                             <constraint firstItem="q5F-Jb-UYj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ipy-GU-HqV"/>
                             <constraint firstItem="osl-oB-PLS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wsf-9j-an1"/>
+                            <constraint firstItem="w0c-b7-d9e" firstAttribute="top" secondItem="q5F-Jb-UYj" secondAttribute="bottom" id="zVa-D6-31D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -100,11 +108,11 @@
             <objects>
                 <viewController id="a81-73-mtc" customClass="SelectedItemViewController" customModule="CoffeeOrderSystemPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UA5-Fc-PH9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="401"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="346"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ijA-zc-owc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="401"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="346"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
