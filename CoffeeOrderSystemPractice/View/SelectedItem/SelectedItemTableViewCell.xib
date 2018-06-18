@@ -27,15 +27,80 @@
                             <constraint firstAttribute="width" secondItem="hsH-qq-3yr" secondAttribute="height" multiplier="1:1" id="n2T-gr-ZHZ"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKn-xL-lVn" customClass="DLRadioButton">
+                        <rect key="frame" x="179" y="41" width="59" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="MVF-W6-KeY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="Iced">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.039966724539999998" green="0.50379774310000003" blue="0.91154272759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                <color key="value" red="0.039966724539999998" green="0.50379774310000003" blue="0.91154272759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="otherButtons" destination="Z8b-y0-Swt" id="wF6-jQ-Wsw"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8b-y0-Swt" customClass="DLRadioButton">
+                        <rect key="frame" x="258" y="41" width="46" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="J4F-3r-Kwr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="Hot">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                <color key="value" red="0.039966724537037035" green="0.50379774305555558" blue="0.91154272762345678" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                <color key="value" red="0.039966724539999998" green="0.50379774310000003" blue="0.91154272759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="otherButtons" destination="VKn-xL-lVn" id="5Pz-CI-hgu"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gb-mx-Zbm">
+                        <rect key="frame" x="138" y="35" width="24" height="37"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTt-Vg-a3U">
+                        <rect key="frame" x="187" y="11" width="34" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Z8b-y0-Swt" secondAttribute="trailing" constant="16" id="6ik-5B-URL"/>
+                    <constraint firstItem="VKn-xL-lVn" firstAttribute="top" secondItem="4gb-mx-Zbm" secondAttribute="top" constant="6" id="Cyz-22-XBZ"/>
                     <constraint firstItem="hsH-qq-3yr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="E3c-z1-mX4"/>
                     <constraint firstItem="hsH-qq-3yr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="IIZ-2I-Oq0"/>
+                    <constraint firstItem="4gb-mx-Zbm" firstAttribute="leading" secondItem="hsH-qq-3yr" secondAttribute="trailing" constant="43" id="PbG-yi-2GP"/>
+                    <constraint firstItem="LTt-Vg-a3U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="QjM-QU-SVo"/>
+                    <constraint firstItem="LTt-Vg-a3U" firstAttribute="leading" secondItem="hsH-qq-3yr" secondAttribute="trailing" constant="92" id="XtR-46-1cG"/>
+                    <constraint firstItem="Z8b-y0-Swt" firstAttribute="leading" secondItem="VKn-xL-lVn" secondAttribute="trailing" constant="20" id="c6N-Xa-pXL"/>
+                    <constraint firstItem="VKn-xL-lVn" firstAttribute="bottom" secondItem="4gb-mx-Zbm" secondAttribute="bottom" constant="-7" id="jzu-xl-AF9"/>
+                    <constraint firstItem="Z8b-y0-Swt" firstAttribute="bottom" secondItem="4gb-mx-Zbm" secondAttribute="bottom" constant="-7" id="oYH-3y-dpS"/>
+                    <constraint firstItem="4gb-mx-Zbm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="uNT-bL-EiA"/>
                     <constraint firstAttribute="bottom" secondItem="hsH-qq-3yr" secondAttribute="bottom" constant="17.5" id="wrn-9D-l0N"/>
+                    <constraint firstItem="Z8b-y0-Swt" firstAttribute="top" secondItem="4gb-mx-Zbm" secondAttribute="top" constant="6" id="yrq-IK-KvR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="itemLabel" destination="LTt-Vg-a3U" id="SSs-7o-P93"/>
                 <outlet property="selectedItemImageView" destination="hsH-qq-3yr" id="ZKi-w4-IJy"/>
             </connections>
             <point key="canvasLocation" x="376" y="137"/>

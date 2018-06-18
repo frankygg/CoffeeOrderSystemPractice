@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+import DLRadioButton
 class SelectedItemTableViewCell: UITableViewCell {
 
     @IBOutlet weak var selectedItemImageView: UIImageView!
     
+    @IBOutlet weak var itemLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

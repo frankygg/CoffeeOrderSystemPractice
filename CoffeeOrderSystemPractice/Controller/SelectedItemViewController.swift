@@ -50,6 +50,7 @@ extension SelectedItemViewController: UITableViewDelegate, UITableViewDataSource
             return UITableViewCell()
         }
         cell.selectedItemImageView.sd_setImage(with: URL(string: selectedItem[indexPath.row].image), completed: nil)
+        cell.itemLabel.text = selectedItem[indexPath.row].name
         return cell
     }
     
